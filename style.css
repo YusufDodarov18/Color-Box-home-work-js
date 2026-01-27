@@ -1,70 +1,15 @@
-/* style.css */
-body {
+body{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: black;
-    overflow: hidden;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
-
-.box {
+.box{
     width: 300px;
     height: 200px;
-    border: 4px dashed yellow;
+    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    animation: spinBox 5s linear infinite, crazyColors 2s infinite alternate;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 0 50px #fff, 0 0 100px red, 0 0 150px blue;
-}
-
-.color {
-    font-size: 24px;
-    font-weight: bold;
-    animation: flashText 0.5s infinite alternate;
-}
-
-.btnChange {
-    margin-top: 20px;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    animation: btnCrazy 1s infinite alternate;
-}
-
-@keyframes spinBox {
-    0% { transform: rotate(0deg) scale(1); }
-    50% { transform: rotate(180deg) scale(1.2); }
-    100% { transform: rotate(360deg) scale(1); }
-}
-
-@keyframes crazyColors {
-    0% { background: #ff00ff; }
-    25% { background: #00ffff; }
-    50% { background: #ffff00; }
-    75% { background: #ff0000; }
-    100% { background: #00ff00; }
-}
-
-@keyframes flashText {
-    0% { color: red; }
-    25% { color: blue; }
-    50% { color: yellow; }
-    75% { color: magenta; }
-    100% { color: cyan; }
-}
-
-@keyframes btnCrazy {
-    0% { background: pink; transform: rotate(-5deg) scale(1); color: black; }
-    25% { background: orange; transform: rotate(5deg) scale(1.1); color: white; }
-    50% { background: lime; transform: rotate(-10deg) scale(1.2); color: black; }
-    75% { background: purple; transform: rotate(10deg) scale(1.1); color: yellow; }
-    100% { background: cyan; transform: rotate(0deg) scale(1); color: black; }
 }
